@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mocha">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for Tech Stack -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="bento-grid">
+        <!-- Profile Card -->
+        <div class="card profile-card" id="discord-card">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="avatar"
+                        id="discord-avatar">
+                    <div class="status-indicator" id="discord-status"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 id="discord-username">Tan</h1>
+                    <p class="tagline" id="discord-activity">Loading status...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bio Card -->
+        <div class="card bio-card">
+            <h2>About Me</h2>
+            <p>Im a full stack dev, if you need im available to code stuff for you, weather for a project or you forgot to do your uni work, with a fee ofcourse. Hit me up on discord if you need to!</p>
+        </div>
+
+        <!-- Socials Card -->
+        <div class="card socials-card">
+            <h2>Connect</h2>
+            <div class="social-links">
+                <a href="https://discord.com/users/1115674875919597639" target="_blank" class="social-btn discord"
+                    title="Discord">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://github.com/tanqyry" target="_blank" class="social-btn github" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://steamcommunity.com/id/Doggoontopbabyy/" target="_blank" class="social-btn steam"
+                    title="Steam">
+                    <i class="fa-brands fa-steam"></i>
+                    <span>Steam</span>
+                </a>
+                <a href="https://open.spotify.com/user/31wqdv4dfmrdwijimk75fpntplnm?si=712dc709e8ba4222" target="_blank"
+                    class="social-btn spotify" title="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                    <span>Spotify</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card skills-card">
+            <h2>Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                <div class="skill-item"><i class="devicon-lua-plain"></i> Lua</div>
+                <div class="skill-item"><i class="devicon-python-plain"></i> Python</div>
+                <div class="skill-item"><i class="devicon-html5-plain"></i> HTML</div>
+                <div class="skill-item"><i class="devicon-css3-plain"></i> CSS</div>
+                <div class="skill-item"><i class="devicon-typescript-plain"></i> TypeScript</div>
+            </div>
+        </div>
+
+        <!-- Timeline / Experience Card -->
+        <div class="card timeline-card">
+            <h2>Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">Future</div>
+                    <div class="content">
+                        <h3>Soon to be done</h3>
+                        <p>More updates coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bigrat Monster Card -->
+        <a href="https://bigrat.monster" target="_blank" class="card bigrat-card">
+            <div class="bigrat-content">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Resume</span>
+            </div>
+        </a>
+
+        <!-- Theme Toggle Card -->
+        <div class="card toggle-card" id="theme-toggle">
+            <i class="fa-solid fa-sun sun-icon"></i>
+            <i class="fa-solid fa-moon moon-icon"></i>
+        </div>
+
+        <!-- Time Card -->
+        <div class="card time-card">
+            <div class="time-display" id="local-time">00:00</div>
+            <div class="date-display" id="local-date">Jan 01</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
